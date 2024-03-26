@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourly - Travel agancy</title>
+  <title>Nomaad - Airballon agancy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- 
     - favicon
@@ -54,9 +55,6 @@
 
         </a>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" alt="Tourly logo">
-        </a>
 
         <div class="header-btn-group">
 
@@ -72,31 +70,34 @@
 
       </div>
     </div>
+    <ul class="social-list">
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>      </li>
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
 
     <div class="header-bottom">
       <div class="container">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
+        <div>
+          <a class="h-20" href="#" >
+            <img class="color-change" src="./assets/images/logo.png" alt="Tourly logo">
+          </a>
+        </div>
 
         <nav class="navbar" data-navbar>
 
@@ -154,6 +155,7 @@
 
 
   <main>
+
     <article>
 
       <!-- 
@@ -163,12 +165,11 @@
       <section class="hero" id="home">
         <div class="container">
 
-          <h2 class="h1 hero-title">Journey to explore world</h2>
+          <h2 class="h2 hero-title">Prêt à planer
+            au-dessus des nuages ?</h2>
 
           <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+            Préparez-vous à vivre une expérience inoubliable dans notre montgolfière. Réservez dès maintenant pour vous élever au-dessus des paysages magnifiques et créer des souvenirs qui resteront gravés dans les airs.
           </p>
 
           <div class="btn-group">
@@ -194,7 +195,7 @@
           <form action="" class="tour-search-form">
 
             <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
+              <label for="destination" class="input-label">Type de ticket*</label>
 
               <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
                 class="input-field">
@@ -205,15 +206,14 @@
 
               <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
             </div>
-
             <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
+              <label for="people" class="input-label">Pax Number*</label>
 
-              <input type="date" name="checkin" id="checkin" required class="input-field">
+              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
             </div>
 
             <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
+              <label for="checkout" class="input-label"> Date*</label>
 
               <input type="date" name="checkout" id="checkout" required class="input-field">
             </div>
@@ -238,7 +238,7 @@
 
           <p class="section-subtitle">Uncover place</p>
 
-          <h2 class="h2 section-title">Popular destination</h2>
+          <h2 class="h2 section-title">Zones de vols</h2>
 
           <p class="section-text">
             Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
@@ -251,8 +251,41 @@
             <li>
               <div class="popular-card">
 
+                <figure class="card-img ">
+                  <img class="" src="https://marrakechdreamballooning.com/wp-content/uploads/2018/09/IMG-20200106-WA0005.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content opacity-90">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Zone Jbilets Nord Palmeraie</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Marrakech</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Le vol  à Marrakech est une expérience unique , découvrir la région sous un angle différent.                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
                 <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                  <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1080,h_1080/https://fezcitytour.com/wp-content/uploads/2021/04/marrakech-air-ballon.jpg" alt="Burj khalifa, dubai" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -266,15 +299,15 @@
                   </div>
 
                   <p class="card-subtitle">
-                    <a href="#">Italy</a>
+                    <a href="#">Zone Désert d'Agafay Sud </a>
                   </p>
 
                   <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
+                    <a href="#">Marrakech</a>
                   </h3>
 
                   <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+                    Le vol  à Marrakech est une expérience unique , découvrir la région sous un angle différent.                  </p>
                   </p>
 
                 </div>
@@ -286,7 +319,7 @@
               <div class="popular-card">
 
                 <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                  <img src="https://images.fineartamerica.com/images-medium-large-5/night-glow-hot-air-balloons-thomas-woolworth.jpg" alt="Kyoto temple, japan" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -300,50 +333,15 @@
                   </div>
 
                   <p class="card-subtitle">
-                    <a href="#">Dubai</a>
+                    <a href="#">Zone Sud Agadir Direction Tiznit.</a>
                   </p>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
+                    <a href="#">Agadir</a>
                   </h3>
 
                   <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+                    Soit lors de campagnes de vols limités dans le temps et décidés                   </p>
 
                 </div>
 
@@ -370,12 +368,10 @@
 
           <p class="section-subtitle">Popular Packeges</p>
 
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
+          <h2 class="h2 section-title">Découvrez nos offres</h2>
 
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            Découvrez une expérience inoubliable avec nos offres exceptionnelles ! Chez nous, l'excellence n'est pas un luxe, c'est une promesse. 
           </p>
 
           <ul class="package-list">
@@ -384,7 +380,7 @@
               <div class="package-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                  <img src="./assets/images/volclassique_fr.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -443,7 +439,7 @@
                   </div>
 
                   <p class="price">
-                    $750
+                    2400 <code class="text">MAD</code>
                     <span>/ per person</span>
                   </p>
 
@@ -458,7 +454,7 @@
               <div class="package-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                  <img src="./assets/images/vol-vip_fr.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -517,7 +513,7 @@
                   </div>
 
                   <p class="price">
-                    $520
+                    3900 <code class="text">MAD</code>
                     <span>/ per person</span>
                   </p>
 
@@ -532,7 +528,7 @@
               <div class="package-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                  <img src="./assets/images/top-vol-vip_fr.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -591,7 +587,7 @@
                   </div>
 
                   <p class="price">
-                    $660
+                    5800 <code class="text">MAD</code>
                     <span>/ per person</span>
                   </p>
 
@@ -610,9 +606,146 @@
       </section>
 
 
+      <!-- 
+        - #TIMELINE
+       -->
+       <!-- <div class="px-14">
+    		<div class="row">
+				<div class="col-md-12">
+          <h2 class="h2 section-title">PLANNING</h2>
+
+          <p class="section-subtitle">Durée moyenne totale de 4h 30min dont 40 à 60min de vol.</p>
+
+					<div class="bg-none h-[160pc]">
+					<ul class="timeline timeline-horizontal">
+						<li class="timeline-item">
+							<div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+                  <img class="m-2" src="assets/images/bus.webp">
+									<h4 class="timeline-title text-blue-500 text-lg   h-6">Transport A/R depuis Hotel/Riad </h4>
+								</div>
+								<div class="timeline-body">
+									<p> Un service de transport confortable sera fourni pour vous emmener de votre hôtel ou riad jusqu'au lieu de départ de l'activité. Vous serez pris en charge à l'heure convenue et ramené en toute sécurité à la fin de l'expérience..</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+                  <img  style="border-radius: 12px; margin-bottom: 6px;" height="200" src="assets/images/tea.jpg">
+
+									<h4 class="timeline-title  text-blue-500 text-lg h-6">Thé marocain, café et gâteaux d'accueil</h4>
+								</div>
+								<div class="timeline-body">
+                  <p>À votre arrivée, vous serez accueilli avec une sélection de délicieux thés marocains, du café fraîchement préparé et des gâteaux traditionnels. C'est l'occasion idéale de vous détendre et de vous imprégner de l'atmosphère chaleureuse et conviviale du Maroc.</p>
+                </div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+                  <img src="assets/images/Briefing.gif">
+									<h4 class="timeline-title text-blue-500 text-lg h-6">Briefing sur la sécurité</h4>
+								</div>
+								<div class="timeline-body">
+                  <p>Avant de prendre part à l'activité, vous recevrez un briefing complet sur les mesures de sécurité à respecter. Notre équipe d'experts vous expliquera les procédures à suivre pour garantir une expérience sûre et agréable.</p>
+                </div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+                  <img height="250" src="assets/images/airballon.gif">
+									<h4 class="timeline-title text-blue-500 text-lg h-6">Vol (45-60 min)</h4>
+								</div>
+								<div class="timeline-body">
+                  <p>Vous aurez l'opportunité de profiter d'un vol panoramique d'une durée de 45 à 60 minutes au-dessus des paysages spectaculaires du Maroc. Admirez des vues à couper le souffle tout en vivant une expérience inoubliable dans les airs.</p>
+                </div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+                  <img height="250" class="rounded-xl" src="assets/images/cuisine_berbere.jpg">
+									<h4 class="timeline-title text-blue-500 text-lg h-6">Déjeuner Berbère </h4>
+								</div>
+								<div class="timeline-body">
+                  <p>Après votre vol, un délicieux déjeuner berbère vous sera servi. Découvrez les saveurs authentiques de la cuisine locale tout en partageant un repas convivial avec votre groupe.</p>
+                </div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+                  <img src="assets/images/certificate.gif">
+									<h4 class="timeline-title text-blue-500 text-lg h-6">Certificat de Vol </h4>
+								</div>
+								<div class="timeline-body">
+                  <p>À la fin de l'expérience, vous recevrez un certificat de vol en reconnaissance de votre participation. C'est un souvenir spécial de cette aventure aérienne que vous pourrez ramener chez vous pour vous remémorer cette expérience unique.  </p>
+                </div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			
+		</div> -->
+
+<!-- REVIEW -->
+<section class="bg-gradient-to-r from-blue-400 to-blue-500  py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="h2 text-white section-title ">Reviews</h2>
+    <p class="section-subtitle text-black">Nous maintenons nos clients heureux</p>
 
 
-
+    <div class="flex justify-center ">
+      <div class="w-full md:w-2/3">
+        <!-- Testimonial Carousel or Grid -->
+        <div class="w-full mx-auto rounded-2xl relative bg-white  shadow-xl lg:p-14 p-6 font-light mb-6">
+          <div class="absolute top-10 left-10">
+            <img src="assets/images/icons/quotes-white.svg" alt="">
+          </div>
+          <div class="absolute bottom-5 right-5">
+            <img src="assets/images/icons/quotes-white.svg" alt="" class="rotate-180">
+          </div>
+          <div class="flex justify-between items-center mb-4">
+            <div class="w-full flex items-center">
+              <div class="overflow-hidden rounded-full">
+                <img src="https://www.womens-work.org.uk/wp-content/uploads/2023/09/Untitled-design-3-683x1024.jpg" alt="" class="w-24 h-24 object-cover bg-white">
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-base">Naima Naji</h6>
+                <h6 class="text-base">a year ago</h6>
+              </div>
+            </div>
+            <div class="flex bg-white p-1 rounded-2xl px-4">
+              <img src="assets/images/icons/star.svg" alt="">
+              <img src="assets/images/icons/star.svg" alt="">
+              <img src="assets/images/icons/star.svg" alt="">
+              <img src="assets/images/icons/star.svg" alt="">
+              <img src="assets/images/icons/star.svg" alt="">
+            </div>
+          </div>
+          <div class="w-full">
+            <p class="text-lg  rounded-2xl ">
+              Absolument adoré mon vol en montgolfière avec Nomad ! Les vues étaient à couper le souffle et l'équipage était si amical et professionnel. Je recommande vivement pour une expérience unique et mémorable !
+            </p>
+          </div>
+        </div>
+        
+        <!-- Repeat this testimonial card for other testimonials -->
+      </div>
+    </div>
+  </div>
+</section>
+    
       <!-- 
         - #GALLERY
       -->
@@ -622,7 +755,7 @@
 
           <p class="section-subtitle">Photo Gallery</p>
 
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
+          <h2 class="h2 section-title">Photo's</h2>
 
           <p class="section-text">
             Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
@@ -634,31 +767,31 @@
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+                <img src="https://nomadballooning.com/web/image/4023-a45c89ec/image00025.jpeg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+                <img src="https://nomadballooning.com/web/image/2333-20554a27/nomad_ballooning_montgolfier_maroc_ballon_image005.jpg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+                <img src="https://nomadballooning.com/web/image/4025-ffe3f8e3/image00022.jpeg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+                <img src="https://i.ytimg.com/vi/wHKguen_5uA/maxresdefault.jpg" alt="Gallery image">
               </figure>
             </li>
 
             <li class="gallery-item">
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+                <img src="https://nomadballooning.com/web/image/3367-85c4ab62/Marrakech%20Montgolfiere.png" alt="Gallery image">
               </figure>
             </li>
 
@@ -714,7 +847,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
+            <img  class="" src="./assets/images/logo.png" alt="Tourly logo">
           </a>
 
           <p class="footer-text">
@@ -778,7 +911,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          &copy; 2024 <a href="">Nomad Air Balloning</a>. All rights reserved
         </p>
 
         <ul class="footer-bottom-list">
@@ -829,6 +962,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-</body>
+</body><div class="zakhrafa-pattern">
+
 
 </html>

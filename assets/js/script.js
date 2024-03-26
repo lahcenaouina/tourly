@@ -9,6 +9,7 @@ const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
+const logo = document.querySelector(".color-change");
 
 const navElemArr = [navOpenBtn, navCloseBtn, overlay];
 
@@ -38,8 +39,12 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= 200) {
     header.classList.add("active");
     goTopBtn.classList.add("active");
+    logo.classList.add("active");
+
   } else {
     header.classList.remove("active");
+    logo.classList.remove("active");
+
     goTopBtn.classList.remove("active");
   }
 
